@@ -34,7 +34,7 @@
 	form, label, legend, table, caption, tbody,
 	tfoot, thead, tr, th, td, article, aside,
 	canvas, details, embed, figure, figcaption,
-	footer, header, hgroup, menu, nav, output, ruby,
+	contact, header, hgroup, menu, nav, output, ruby,
 	section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
@@ -45,7 +45,7 @@
 	}
 
 	article, aside, details, figcaption, figure,
-	footer, header, hgroup, menu, nav, section {
+	contact, header, hgroup, menu, nav, section {
 		display: block;
 	}
 
@@ -1023,9 +1023,9 @@
 	#main {
 	}
 
-/* Footer */
+/* contact */
 
-	#footer {
+	#contact {
 		background: #282b34 url('images/overlay.png');
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
@@ -1209,9 +1209,9 @@
 				}
 			}
 
-		/* Footer */
+		/* contact */
 
-			#footer {
+			#contact {
 				padding-bottom: 4em;
 
 				header {
@@ -1301,9 +1301,9 @@
 				}
 			}
 
-		/* Footer */
+		/* contact */
 
-			#footer {
+			#contact {
 				.feature-list {
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					padding-top: 4em;
@@ -1674,9 +1674,9 @@
 				}
 			}
 
-		/* Footer */
+		/* contact */
 
-			#footer {
+			#contact {
 				padding-bottom: 0;
 
 				header {
