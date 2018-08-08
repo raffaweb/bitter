@@ -7,7 +7,7 @@
 <html>
 
 <head>
-    <title>Escape Velocity by HTML5 UP</title>
+    <title>Bitter Music</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
@@ -34,50 +34,7 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Dropdown</a>
-                        <ul>
-                            <li>
-                                <a href="#">Lorem ipsum</a>
-                            </li>
-                            <li>
-                                <a href="#">Magna veroeros</a>
-                            </li>
-                            <li>
-                                <a href="#">Etiam nisl</a>
-                            </li>
-                            <li>
-                                <a href="#">Sed consequat</a>
-                                <ul>
-                                    <li>
-                                        <a href="#">Lorem dolor</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Amet consequat</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Magna phasellus</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Etiam nisl</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sed feugiat</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Nisl tempus</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="left-sidebar.html">Left Sidebar</a>
-                    </li>
-                    <li>
-                        <a href="right-sidebar.html">Right Sidebar</a>
-                    </li>
-                    <li>
-                        <a href="no-sidebar.html">No Sidebar</a>
+                        <a href="#services">Servizi</a>
                     </li>
                     <li>
                         <a href="#contact">Contatti</a>
@@ -112,9 +69,9 @@
             </div>
         </section>
 
-        <!-- Main -->
-        <section id="main" class="wrapper style2">
-            <div class="title">The Details</div>
+        <!-- Services-->
+        <section id="services" class="wrapper style2">
+            <div class="title">Servizi</div>
             <div class="container">
 
                 <!-- Image -->
@@ -125,8 +82,8 @@
                 <!-- Features -->
                 <section id="features">
                     <header class="style1">
-                        <h2>Dolor consequat feugiat amet veroeros</h2>
-                        <p>Feugiat dolor nullam orci pretium phasellus justo</p>
+                        <h2>Su misura per te</h2>
+                        
                     </header>
                     <div class="feature-list">
                         <div class="row">
@@ -209,7 +166,7 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="col-4 col-12-medium">
+                    <div class="col-4">
                         <section class="highlight">
                             <a href="#" class="image featured">
                                 <img src="images/pic03.jpg" alt="" />
@@ -246,6 +203,18 @@
                 </div>
             </div>
         </section>
+        
+        <!-- instagram -->
+        <section id="ig" class="wrapper style2">
+            <div class="title">Instagram</div>
+            <div class="container">
+                <div id="instafeed" class='grid'>
+                    <div class="grid-sizer"></div>
+                </div>
+            </div>
+        </section>
+        
+
 
         <!-- contact -->
         <section id="contact" class="wrapper">
@@ -280,7 +249,7 @@
                     </div>
                     <div class="col-6 col-12-medium">
 
-                        <!-- Contact -->
+                        <!-- Contact & Social -->
                         <section class="feature-list small">
                             <div class="row">
                                 <div class="col-6 col-12-small">
@@ -340,13 +309,47 @@
     </div>
 
     <!-- Scripts -->
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'user',
+            userId: '143802604',
+            clientId: '1b715cc3e5eb47f09e93b4c71e4306ac',
+            accessToken: '143802604.1b715cc.1680657594d6437c8b75b0f5da752308',
+            resolution: 'standard_resolution',
+            template: '<a class="grid-item" href="{{link}}"><img src="{{image}}"/></a>',
+            limit:21,
+            sortBy: 'most-recent',
 
+            filter: function (image) {
+                return image.type === "image";
+            },
+            
+            after: function () {
+                var elem = document.querySelector('.grid');
+                imagesLoaded(elem, function (instance) {
+                    var msnry = new Masonry(elem, {
+                        // options
+                        columnWidth: '.grid-sizer',
+                        itemSelector: '.grid-item',
+                        percentPosition: true
+                    });
+                });
+            }
+        });
+        feed.run();
+    </script>
 </body>
 
 </html>

@@ -1969,7 +1969,7 @@ input, select, textarea {
 				left: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				/* background: url("images/shadow.png"); */
 			}
 
 			.wrapper .title:after {
@@ -1983,7 +1983,7 @@ input, select, textarea {
 				right: -35px;
 				width: 35px;
 				height: 38px;
-				background: url("images/shadow.png");
+				/*background: url("images/shadow.png");*/
 			}
 
 		.wrapper.style1 {
@@ -2959,3 +2959,31 @@ input, select, textarea {
 						}
 
 	}
+
+
+/* ---- grid ---- */
+
+.grid {
+  display: flex;
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
