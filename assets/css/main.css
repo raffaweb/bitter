@@ -1667,6 +1667,13 @@ input, select, textarea {
 			min-width: 14em;
 		}
 
+		button.small,
+		.button.small {
+			font-size: .5em;
+			min-width: 14em;
+
+		}
+
 		input[type="button"].style1,
 		input[type="submit"].style1,
 		input[type="reset"].style1,
