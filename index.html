@@ -174,7 +174,7 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 col-12-medium">
                         <section class="highlight">
                             <a href="#" class="image featured">
                                 <img src="images/pic03.jpg" alt="" />
@@ -229,7 +229,35 @@
             <div id="photos"></div>
     </section>
     
-            
+
+    <!-- Dicono di noi -->
+    <section id="reviews" class="wrapper style3">
+        <div class="title">Dicono di noi</div>
+        <div class="container">
+            <div class="row aln-center">
+                <div class="col-4 col-12-medium">
+                    <section class="highlight">
+                        <div id="wp-rated">
+                            <a href="https://www.matrimonio.com/musica-matrimonio/mara-bosisio-acoustic-trio--e161057" title="Suggerito in www.matrimonio.com"><img
+                                    alt="Consigliato da Matrimonio.com" id="wp-rated-img" src="https://cdn1.matrimonio.com/img/badges/2018/badge-gold_it_IT@2x.jpg"
+                                /></a>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-8 col-12-medium">
+                    <section class="highlight">
+                        <div class="comments">
+                            <h4 class="slides"> “Be yourself; everyone else is already taken.” ― Oscar Wilde</h4>
+                            <h4 class="slides">“Be who you are and say what you feel, because those who mind don't matter, and those who matter don't
+                                mind.” ― Bernard M. Baruch</h4>
+                            <h4 class="slides">“To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”
+                                ― Ralph Waldo Emerson</h4>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
 
         <!-- contact -->
         <section id="contact" class="wrapper">
@@ -271,9 +299,7 @@
                                     <section>
                                         <h3 class="icon fa-home">Mailing Address</h3>
                                         <p>
-                                            Untitled Corp
-                                            <br /> 1234 Somewhere Rd
-                                            <br /> Nashville, TN 00000
+                                            Milan, Italy
                                         </p>
                                     </section>
                                 </div>
@@ -281,19 +307,16 @@
                                     <section>
                                         <h3 class="icon fa-comment">Social</h3>
                                         <p>
-                                            <a href="#">@untitled-corp</a>
+                                            <a href="https://www.instagram.com/bitter.duo/" target="_blank" rel="noopener">bitter.duo</a>
                                             <br />
-                                            <a href="#">linkedin.com/untitled</a>
-                                            <br />
-                                            <a href="#">facebook.com/untitled</a>
-                                        </p>
+                                            </p>
                                     </section>
                                 </div>
                                 <div class="col-6 col-12-small">
                                     <section>
                                         <h3 class="icon fa-envelope">Email</h3>
                                         <p>
-                                            <a href="#">info@untitled.tld</a>
+                                            <a href="mailto:bitterduo@gmail.com">bitterduo@gmail.com</a>
                                         </p>
                                     </section>
                                 </div>
@@ -325,6 +348,7 @@
 
     <!-- Scripts -->
     <link rel="stylesheet" href="assets/css/main.css" />
+    
     <link rel="stylesheet" href="assets/css/masongram.min.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -338,7 +362,25 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <!-- Matrimonio.com -->
+    <script type="text/javascript" src="https://cdn1.matrimonio.com/_js/wp-rated.js?v=4"></script>
+    <script>wpShowRatedv2('161057');</script>
 
+
+    <script>
+        $(document).ready(function() {
+
+                $(function() {
+
+                    $('.comments .slides:gt(0)').hide();
+                    setInterval(function () {
+                        $('.comments :first-child').fadeOut(2000).next('.slides').fadeIn(2000)
+                            .end().appendTo('.comments');
+                    }, 7000);
+                });
+         });
+    </script>
     <script>
         var access_token = '143802604.1b715cc.1680657594d6437c8b75b0f5da752308';
         var authorization = 'https://api.instagram.com/oauth/authorize/?client_id=1b715cc3e5eb47f09e93b4c71e4306ac&redirect_uri=' + window.location + '&response_type=token&scope=public_content';
@@ -347,7 +389,7 @@
             $('#photos').masongram({
                 access_token: access_token,
                 count: 9,
-                size: 'low_resolution',
+                size: 'standard_resolution',
                 caption: '<div class="text-center"><p data-if="{likes}"><i class="fa fa-heart text-danger"></i> {likes}</p><p data-if="{caption}">{caption}</p><a tabindex="-1" class="button style1 small" href="{link}" target="_blank" data-if="{link}"><i class="fa fa-instagram"></i> Instagram</a></div>'
             });
             $('.authorization').attr('href', authorization);
