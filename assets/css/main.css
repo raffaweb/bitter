@@ -1590,6 +1590,7 @@ input, select, textarea {
 		display: inline-block;
 	}
 
+
 		.image img {
 			display: block;
 			width: 100%;
@@ -2994,3 +2995,8 @@ input, select, textarea {
   max-width: 100%;
 }
 
+/* ---- reviews ---- */
+
+div.review {
+    display: none;
+}
