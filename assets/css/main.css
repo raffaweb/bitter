@@ -2998,5 +2998,11 @@ input, select, textarea {
 /* ---- reviews ---- */
 
 div.review {
-    display: none;
+	display: none;
+	font-weight: 100;
+	font-size: 20pt;
+}
+
+div.review author {
+	font-size: 15pt;
 }

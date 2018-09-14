@@ -240,42 +240,26 @@
                 </div>
                 <div class="col-8 col-12-medium">
                     <div>
-                        <div class="review">“Be yourself; everyone else is already taken.” ― Oscar Wilde</div>
-                        <div class="review">“Be who you are and say what you feel, because those who mind don't matter, and those who
-                            matter
-                            don't mind.” ― Bernard M. Baruch</div>
-                        <div class="review">“To be yourself in a world that is constantly trying to make you something else is the greatest
-                            accomplishment ― Ralph Waldo Emerson</div>
+                        <div class="review">“Molto disponibili, abbiamo scelto la scaletta dal loro repertorio. Ci hanno annunciato al nostro
+                        ingresso, hanno cantato la canzone del nostro primo ballo e hanno coinvolto gli invitati durante l'aperitivo facendoli cantare.
+                        Consigliatissimi! Mara ha una bellissima voce e i ragazzi che la accompagnano sono da 10 e lode!"
+                        - <author>Chiara Curti 12/05/2018</author></div>
+                        <div class="review">“Ci siamo sposati il 6 ottobre 2017 e siamo stati contentissimi della scelta fatta. Ottimo
+                        intrattenimento musicale dal taglio della torta fino a fine serata.
+                        Voce spettacolare e scelta dei brani musicali, sia da ballare che da cantare, perfetti per creare un'atmosfera
+                        gioiosa e festosa, ideale per il matrimonio.
+                        Professionalità ed esperienza fanno di questo trio una scelta vincente per un matrimonio perfetto."
+                        - <author>Roberta 06/10/17</author></div>
+                        <div class="review">“Ci siamo sposati il 6 ottobre 2017 e siamo stati contentissimi della scelta fatta. Ottimo
+                        intrattenimento musicale dal taglio della torta fino a fine serata.
+                        Voce spettacolare e scelta dei brani musicali, sia da ballare che da cantare, perfetti per creare un'atmosfera
+                        gioiosa e festosa, ideale per il matrimonio.
+                        Professionalità ed esperienza fanno di questo trio una scelta vincente per un matrimonio perfetto."
+                        - <author>Roberta 06/10/17</author></div>
                     </div>
                 </div>
             </div>
         </div>
-       <!--
-
-                    <p class="item-1">Molto disponibili, abbiamo scelto la scaletta dal loro repertorio. Ci hanno annunciato al nostro
-                        ingresso, hanno
-                        cantato la canzone del nostro primo ballo e hanno coinvolto gli invitati durante l'aperitivo facendoli cantare.
-                        Consigliatissimi! Mara ha una bellissima voce e i ragazzi che la accompagnano sono da 10 e lode! - Chiara Curti
-                        12/05/2018</p>
-                    <p class="item-2">Ci siamo sposati il 6 ottobre 2017 e siamo stati contentissimi della scelta fatta. Ottimo
-                        intrattenimento musicale dal
-                        taglio della torta fino a fine serata.
-                        Voce spettacolare e scelta dei brani musicali, sia da ballare che da cantare, perfetti per creare un'atmosfera
-                        gioiosa
-                        e festosa, ideale per il matrimonio.
-                        Professionalità ed esperienza fanno di questo trio una scelta vincente per un matrimonio perfetto. - Roberta
-                        06/10/17- </p>
-                    <p class="item-3">Ci siamo sposati il 6 ottobre 2017 e siamo stati contentissimi della scelta fatta. Ottimo
-                        intrattenimento musicale dal
-                        taglio della torta fino a fine serata.
-                        Voce spettacolare e scelta dei brani musicali, sia da ballare che da cantare, perfetti per creare un'atmosfera
-                        gioiosa
-                        e festosa, ideale per il matrimonio.
-                        Professionalità ed esperienza fanno di questo trio una scelta vincente per un matrimonio perfetto. - Roberta
-                        06/10/17-
-                    </p>
-
-       -->
     </section>
 
         <!-- contact -->
@@ -361,8 +345,7 @@
                     </ul>
                 </div>
             </div>
-        </section>
-
+        </section>  
     </div>
 
     <!-- Scripts -->
@@ -392,7 +375,7 @@
             reviews = $('.review');
 
         function nextReview() {
-            $(reviews[revIdx]).fadeOut(1000, function () {
+            $(reviews[revIdx]).fadeOut(2000, function () {
                 revIdx++
                 if (revIdx >= reviews.length) revIdx = 0;
                 $(reviews[revIdx]).fadeIn(1000, nextReview);
