@@ -20,9 +20,9 @@
             
             <!-- Logo mio -->
             <div id="logo">
-                <a href="index.html" class="image center">
-                    <img src="images/rosso.png" alt="" />
-                </a>
+                <h1>Bitter is Better</h1>
+                <p>Wedding  &  Events</p>
+                
             </div>
 
 
@@ -375,7 +375,7 @@
             reviews = $('.review');
 
         function nextReview() {
-            $(reviews[revIdx]).fadeOut(2000, function () {
+            $(reviews[revIdx]).delay(9000).fadeOut(2000, function () {
                 revIdx++
                 if (revIdx >= reviews.length) revIdx = 0;
                 $(reviews[revIdx]).fadeIn(1000, nextReview);

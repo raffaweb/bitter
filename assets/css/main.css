@@ -1,5 +1,6 @@
 @import url("font-awesome.min.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");
+/*@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,900");*/
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,sans-serif");
 
 /*
 	Escape Velocity by HTML5 UP
@@ -2054,9 +2055,10 @@ input, select, textarea {
 		justify-content: center;
 		position: relative;
 		height: 24em;
-		background: url("../../images/banner.jpg") center center;
+		background: url("../../images/mara_e_raffa-r.jpg") center center;
 		background-size: cover;
 		padding: 0;
+		
 	}
 
 		#header:before {
@@ -2066,6 +2068,7 @@ input, select, textarea {
 			left: 0;
 			width: 100%;
 			height: 100%;
+			opacity: .3;
 			/*background: url("images/overlay.png");*/
 		}
 
@@ -2084,28 +2087,34 @@ input, select, textarea {
 
 		#logo h1 {
 			font-weight: 900;
-			text-transform: uppercase;
+			/*text-transform: uppercase;*/
 			color: #fff;
-			font-size: 2em;
-			letter-spacing: 0.25em;
+			font-size: 5em;			
+			letter-spacing: 0.3em;
+			-webkit-text-stroke: 1.9px rgb(46, 50, 57)
+			
 		}
 
 		#logo p {
-			color: #eee;
-			color: rgba(255, 255, 255, 0.5);
-			text-transform: uppercase;
-			margin: 1.25em 0 0 0;
-			display: block;
+			color: #fff;
+			/*text-transform: uppercase;*/
+			margin: 1.2em 0 0 0;
+			display: block;	
 			letter-spacing: 0.2em;
-			font-size: 0.9em;
+			font-size: 2.9em;
+			font-style: italic;
+			-webkit-text-stroke: 1.0px rgb(46, 50, 57)
 		}
+
+
 
 /* Nav */
 
 	#nav {
 		position: absolute;
 		display: block;
-		top: 2.5em;
+		top: 0em;
+		/* orig top: 2.5em;*/
 		left: 0;
 		width: 100%;
 		text-align: center;
@@ -2114,27 +2123,34 @@ input, select, textarea {
 		#nav > ul {
 			display: inline-block;
 			border-radius: 0.35em;
-			box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.25);
+			box-shadow: inset 0px 0px 1px 1px rgba(243,244,246,1)	;
 			padding: 0 1.5em 0 1.5em;
+			/*background-color: #1f232b;*/
+			background: -webkit-linear-gradient(
+						bottom, rgba(243,244,246,1) 50%,
+						rgba(243,244,246,1) 0%,rgba(243,244,246,1) 50%);
 		}
 
+	
 			#nav > ul > li {
 				display: inline-block;
 				text-align: center;
 				padding: 0 1.5em 0 1.5em;
+				
 			}
 
 				#nav > ul > li > ul {
 					display: none;
+					
 				}
 
 				#nav > ul > li > a, #nav > ul > li > span {
-					display: block;
+					display: block;					
 					color: #eee;
-					color: rgba(255, 255, 255, 0.75);
+					color: rgb(229, 117, 110);
 					text-transform: uppercase;
 					text-decoration: none;
-					font-size: 0.7em;
+					font-size: 0.8em;
 					letter-spacing: 0.25em;
 					height: 5em;
 					line-height: 5em;
@@ -2147,7 +2163,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a {
-					color: #fff;
+					color: rgba(44, 50, 63, 0.925);
 				}
 
 				#nav > ul > li.active > a, #nav > ul > li.active > span {
@@ -2872,11 +2888,12 @@ input, select, textarea {
 				padding-right: 2em;
 			}
 
+				/* ORIG
 				#logo h1 {
 					font-size: 1.5em;
 					letter-spacing: 0.2em;
-				}
-
+				}*/
+	
 				#logo p {
 					margin: 1.25em 0 0 0;
 					display: block;
@@ -2999,10 +3016,13 @@ input, select, textarea {
 
 div.review {
 	display: none;
-	font-weight: 100;
+	font-weight: 300;
 	font-size: 20pt;
+	font-style: bold,italic
+	
 }
 
 div.review author {
 	font-size: 15pt;
+	
 }
