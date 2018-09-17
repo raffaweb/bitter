@@ -2069,7 +2069,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color:white;
-			opacity: .45;
+			opacity: .3;
 			/*background: url("images/overlay.png");*/
 		}
 
@@ -2091,9 +2091,9 @@ input, select, textarea {
 			font-weight: 900;
 			/*text-transform: uppercase;*/
 			color: #fff;
-			font-size: 6em;			
-			letter-spacing:0.65em;
-			-webkit-text-stroke-width:2px; 
+			font-size: 5em;			
+			letter-spacing: 0.3em;
+			-webkit-text-stroke-width:1.9px; 
 			
 			
 		}
@@ -2103,10 +2103,10 @@ input, select, textarea {
 			/*text-transform: uppercase;*/
 			margin: 1.2em 0 0 0;
 			display: block;	
-			letter-spacing: 0.2em;
+			letter-spacing: 0.3em;
 			font-size: 3.2em;
 			/*font-style: italic;*/
-			-webkit-text-stroke-width: 1.7px;
+			-webkit-text-stroke-width: 1.6px
 		}
 
 
@@ -2459,13 +2459,13 @@ input, select, textarea {
 			}
 
 				#logo h1 {
-					font-size: 5.5em;
-					-webkit-text-stroke-width: 1.8px;
+					font-size: 2.7em;
+					-webkit-text-stroke-width: 1.2px;
 				}
 
 				#logo p {
-					font-size: 3.5em;
-					-webkit-text-stroke-width: 1.5px
+					font-size: 2.2em;
+					-webkit-text-stroke-width: 1.1px
 					
 				}
 
@@ -2551,13 +2551,13 @@ input, select, textarea {
 			}
 
 				#logo h1 {
-					font-size: 4.5em;
-					-webkit-text-stroke-width: 1.5px
+					font-size: 3.5em;
+					-webkit-text-stroke-width: 1.3px
 					
 				}
 
 				#logo p {
-					font-size: 2.6em;
+					font-size: 3.2em;
 					-webkit-text-stroke-width: 1.3px
 				}	
 		
@@ -2771,10 +2771,6 @@ input, select, textarea {
 
 		/* Basic */
 
-			#header {
-				background: #fff;
-			}
-
 			body, input, select, textarea {
 				line-height: 1.5em;
 				font-size: 10.5pt;
@@ -2914,13 +2910,15 @@ input, select, textarea {
 
 				
 				#logo h1 {
-					font-size: 3em;
+					font-size: 1.9em;
+					letter-spacing: 0.2em;
 					-webkit-text-stroke-width: 1.2px;
 				}
 	
 				#logo p {
 					margin: 1.25em 0 0 0;
 					display: block;
+					letter-spacing: 0.2em;
 					font-size: 1.8em;
 					-webkit-text-stroke-width: .8px;
 				}
@@ -3012,17 +3010,18 @@ input, select, textarea {
 	@media screen and (max-width: 350px) {
 				
                 #logo h1 {
-					font-size: 3em;
-					letter-spacing: .3em;
-					-webkit-text-stroke-width: 1.2px;
+					font-size: 1.8em;
+					letter-spacing: 0.2em;
+					-webkit-text-stroke-width: 1.0px;
+					line-height: 1.2em
 				}
 	
 				#logo p {
+					margin: 1.4em 0 0 0;
 					display: block;
 					letter-spacing: 0.2em; 
-					font-size: 2.2em;
-					-webkit-text-stroke-width: .9px;
-					line-height: 1em
+					font-size: 1.5em;
+					-webkit-text-stroke-width: .6px;
 				}
 
 	}
