@@ -80,11 +80,11 @@
             <!--<div class="title">Servizi</div>-->
             <div class="container">
 
-                <!-- Image
-                <a href="#" class="image featured">
-                    <img src="images/mara_e_raffa-r.jpg" alt="" />
-                </a>-->
-
+                <div class="service-intro-image">                
+                    <a href="#" class="image featured">
+                        <img src="images/mara_e_raffa-r.jpg" alt="" />
+                    </a>
+                </div>
                 <!-- Features -->
                 <section id="features">
                     <header class="style1">
@@ -309,7 +309,7 @@
                                 </div>
                                 <div class="col-6 col-12-small">
                                     <section>
-                                        <h3 class="icon fa-comment">Social</h3>
+                                        <h3 class="icon fa-instagram">Instagram</h3>
                                         <p>
                                             <a href="https://www.instagram.com/bitter.duo/" target="_blank" rel="noopener">bitter.duo</a>
                                             <br />
@@ -365,7 +365,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    
+
     <!-- Matrimonio.com -->
     <script type="text/javascript" src="https://cdn1.matrimonio.com/_js/wp-rated.js?v=4"></script>
     <script>wpShowRatedv2('161057');</script>
@@ -376,20 +376,19 @@
             reviews = $('.review');
 
         function nextReview() {
-            $(reviews[revIdx]).delay(9000).fadeOut(2000, function () {
-                revIdx++
-                if (revIdx >= reviews.length) revIdx = 0;
-                $(reviews[revIdx]).fadeIn(1000, nextReview);
+            $(reviews[revIdx]).fadeIn(1000, function () {
+                $(reviews[revIdx]).delay(9000).fadeOut(1000, nextReview);                
+                revIdx = ( revIdx + 1 ) % reviews.length;                
             })
         }
         nextReview();
     </script>
 
     <script>
-        var access_token = '143802604.1b715cc.1680657594d6437c8b75b0f5da752308';
-        var authorization = 'https://api.instagram.com/oauth/authorize/?client_id=1b715cc3e5eb47f09e93b4c71e4306ac&redirect_uri=' + window.location + '&response_type=token&scope=public_content';
-        jQuery.noConflict();
-        jQuery(document).ready(function () {
+        var access_token = '8540527107.2352ed9.ddb5db00fafe4f06a48a05163a5a46c8';
+        var authorization = 'https://api.instagram.com/oauth/authorize/?client_id=2352ed93edfb477b988b99bcdb9bb407&redirect_uri=' + window.location + '&response_type=token&scope=public_content';
+        $.noConflict();
+        $(document).ready(function () {
             $('#photos').masongram({
                 access_token: access_token,
                 count: 9,
