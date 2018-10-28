@@ -188,7 +188,7 @@ p.lead {
   font-family: "metropolis-regular", sans-serif;
   font-size: 2.4rem;
   line-height: 1.75;
-  margin-bottom: 3.6rem;
+  margin-top: 3.6rem;
   color: rgba(85, 85, 85, 0.95);
 }
 @media only screen and (max-width: 1200px) {
@@ -1713,9 +1713,8 @@ input::-moz-focus-inner {
   overflow: hidden;
   position: relative;
 }
-/*RAFFA*/
+
 .home-content img {
-  padding-left: 10rem;
   width: 450px;
   height: auto;
 }
@@ -1725,10 +1724,8 @@ input::-moz-focus-inner {
   line-height: 1.421;
   color: rgba(255, 255, 255, 0.8);
   margin-top: 5rem;
-  padding-left: 10rem;
   position: relative;
 }
-/*END RAFFA*/
 
 .home-content img + p {
   font-family: "metropolis-light", sans-serif;
@@ -1998,6 +1995,7 @@ html.no-csstransitions .home-content__main {
  * home
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1600px) {
+
   .home-content img + p {
     font-size: 3.6rem;
   }
@@ -2199,6 +2197,11 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
+.s-about.image.featured {
+   display: block;
+   width: 100%;
+   margin: 0 0 2em 0;
+}
 
 /* ------------------------------------------------------------------- 
  * ## about process
@@ -2440,6 +2443,11 @@ html.no-csstransitions .home-content__main {
   position: relative;
 }
 
+.s-works__reviews {
+  background: #f1f1f1;
+  padding: 18rem 0 24rem;
+  position: relative;
+}
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -3345,6 +3353,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
+  
   .s-contact {
     padding-top: 9.6rem;
     padding-bottom: 3rem;
