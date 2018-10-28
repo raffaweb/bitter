@@ -39,7 +39,7 @@
  *    ## about process
  *  # services
  *    ## services list
- *  # works
+ *  # pics
  *    ## bricks/masonry
  *  # testimonials
  *  # stats 
@@ -1715,7 +1715,7 @@ input::-moz-focus-inner {
 }
 
 .home-content img {
-  width: 450px;
+  width: 420px;
   height: auto;
 }
 .home-content p {
@@ -2434,16 +2434,16 @@ html.no-csstransitions .home-content__main {
 
 
 /* ===================================================================
- * # works
+ * # pics
  *
  * ------------------------------------------------------------------- */
-.s-works {
+.s-pics {
   background: #ffffff;
   padding: 18rem 0 24rem;
   position: relative;
 }
 
-.s-works__reviews {
+.s-pics__reviews {
   background: #f1f1f1;
   padding: 18rem 0 24rem;
   position: relative;
@@ -2626,7 +2626,7 @@ html.no-csstransitions .home-content__main {
 
 /* ------------------------------------------------------------------- 
  * responsive:
- * works
+ * pics
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1500px) {
   .masonry-wrap {
@@ -2659,7 +2659,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 1200px) {
-  .s-works {
+  .s-pics {
     padding: 15rem 0 22.2rem;
   }
 }
@@ -2675,7 +2675,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 800px) {
-  .s-works {
+  .s-pics {
     padding: 12rem 0 21rem;
   }
 
@@ -2690,7 +2690,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 @media only screen and (max-width: 400px) {
-  .s-works {
+  .s-pics {
     padding: 9.6rem 0 21rem;
   }
 
